@@ -1,0 +1,34 @@
+nav#mainNav.navbar.navbar-expand-lg.fixed-top.bg-secondary.text-uppercase
+    .container
+        a.navbar-brand(href='#page-top') Mikko Rautavirta
+
+        button.navbar-toggler.text-white.bg-primary.navbar-toggler-right.text-uppercase.rounded(
+            data-bs-toggle='collapse'
+            data-bs-target='#navbarResponsive'
+            aria-controls='navbarResponsive'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+        )
+            i.fa.fa-bars
+
+        #navbarResponsive.collapse.navbar-collapse
+            ul.navbar-nav.ms-auto
+                li.nav-item.mx-0.mx-lg-1
+                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about')
+                        i.fa.fa-info-circle.fa-outline
+                        | About
+
+                li.nav-item.mx-0.mx-lg-1
+                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#skills')
+                        i.fa.fa-code
+                        | Skills
+
+                li.nav-item.mx-0.mx-lg-1
+                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#projects')
+                        i.fa.fa-rocket
+                        | Projects
+
+                li.nav-item.mx-0.mx-lg-1
+                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact')
+                        i.fa.fa-envelope
+                        | Contact

@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('*', function(req, res){
+    res.render('notfound');
+});
+
 app.listen(port, () => {
-    console.log(`Server is http://localhost:${port}`);
+    console.log(`Server running at http://localhost:${port}`);
 });
