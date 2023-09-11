@@ -963,15 +963,17 @@
     }
   },
   "dependencies": {
+    "build": "^0.1.4",
     "express": "^4.18.2",
     "pug": "^3.0.2"
   },
   "description": "My portfolio website project",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "start"
+    "build": "npm install --production=false",
+    "build:digitalocean": "npm install --production=false && npm ci",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
