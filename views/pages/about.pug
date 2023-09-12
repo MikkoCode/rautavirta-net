@@ -1,0 +1,23 @@
+.container
+    // Section Header
+    h2.text-uppercase.text-center.text-white= about
+    hr.star-light.mb-5
+
+    .row
+        // Profile Picture
+        .col-lg-4.ms-auto
+            img.img-fluid.mb-5.profilepic(src='/img/profilepic.jpg')
+
+        // Personal Information
+        .col-lg-4.me-auto
+            p.lead
+                | Freelancer is a free bootstrap theme. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+
+        // Additional Information
+        .col-lg-4.me-auto
+            p.lead
+                | Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+
+            // Resume Download Button
+            .text-center.mt-4
+                a.btn.btn-outline-light.btn-xl(role='button' href='#')=view_resume

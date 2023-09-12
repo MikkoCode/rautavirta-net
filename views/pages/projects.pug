@@ -1,0 +1,19 @@
+.container
+    h2.text-uppercase.text-center.text-secondary= projects
+    h3.text-center.text-info.mb-5
+        a.link-info(href='https://github.com/MikkoCode') GitHub
+    .divider-custom
+    hr.star-dark.mb-5
+
+    mixin projectBlock(imgSrc, modalId)
+        .col-md-6.col-lg-4
+            a.d-block.mx-auto.portfolio-item(href=modalId data-bs-toggle='modal')
+                .d-flex.portfolio-item-caption.position-absolute.h-100.w-100
+                img.img-fluid(src=imgSrc)
+    .row
+        +projectBlock('/img/portfolio/cabin.png?h=5bde47039f23de84a7748bee08793ac3', '#portfolio-modal-1')
+        +projectBlock('/img/portfolio/cake.png?h=4b5723e2b00006ef3a25df097c7187dd', '#portfolio-modal-2')
+        +projectBlock('/img/portfolio/circus.png?h=984b4ff719255fcbf2e01164905ebb90', '#portfolio-modal-3')
+        +projectBlock('/img/portfolio/game.png?h=b5df08ec517f8b9872be52e015333d8a', '#portfolio-modal-4')
+        +projectBlock('/img/portfolio/safe.png?h=77cbc82936acf11b03bd687ff795e835', '#portfolio-modal-5')
+        +projectBlock('/img/portfolio/submarine.png?h=71572e367539ee27f418326f2361bce2', '#portfolio-modal-6')

@@ -48,31 +48,93 @@ app.get('/', (req, res) => {
         i18n.setLocale(reqlocale);
         res.setLocale(i18n.getLocale()); // Set the locale from the cookie
         console.log(`Rendering Pug template. Current locale: ${res.getLocale()}`);
-        res.render('index', {
+        res.render('pages/index', {
             welcomeMessage: res.__('welcome_message'),
             about: res.__('about'),
             skills: res.__('skills'),
             projects: res.__('projects'),
             contact: res.__('contact'),
             shortDescription: res.__('short_description'),
+            sourceCode: res.__('sourcecode'),
+            viewResume: res.__('view_resume'),
+            skillsItem1: res.__('skills_item_1'),
+            skillsItem1Desc: res.__('skills_item_1_desc'),
+            skillsItem2: res.__('skills_item_2'),
+            skillsItem2Desc: res.__('skills_item_2_desc'),
+            skillsItem3: res.__('skills_item_3'),
+            skillsItem3Desc: res.__('skills_item_3_desc'),
+            skillsItem4: res.__('skills_item_4'),
+            skillsItem4Desc: res.__('skills_item_4_desc'),
+            skillsItem5: res.__('skills_item_5'),
+            skillsItem5Desc: res.__('skills_item_5_desc'),
+            skillsItem6: res.__('skills_item_6'),
+            skillsItem6Desc: res.__('skills_item_6_desc'),
+            skillsItem7: res.__('skills_item_7'),
+            skillsItem7Desc: res.__('skills_item_7_desc'),
+            skillsItem8: res.__('skills_item_8'),
+            skillsItem8Desc: res.__('skills_item_8_desc'),
+            skillsItem9: res.__('skills_item_9'),
+            skillsItem9Desc: res.__('skills_item_9_desc'),
+            skillsItem10: res.__('skills_item_10'),
+            skillsItem10Desc: res.__('skills_item_10_desc'),
+            skillsItem11: res.__('skills_item_11'),
+            skillsItem11Desc: res.__('skills_item_11_desc'),
+            skillsItem12: res.__('skills_item_12'),
+            skillsItem12Desc: res.__('skills_item_12_desc'),
+            skillsItem13: res.__('skills_item_13'),
+            skillsItem13Desc: res.__('skills_item_13_desc'),
+            contactDescription: res.__('contact_description'),
+            copyright: res.__('copyright'),
             languageMessage: res.__('language_message')
         });
+
     } else {
         res.setLocale(i18n.getLocale()); // Set the locale from the cookie
         console.log(`Rendering Pug template. Current locale: ${res.getLocale()}`);
-        res.render('index', {
+        res.render('pages/index', {
             welcomeMessage: res.__('welcome_message'),
             about: res.__('about'),
             skills: res.__('skills'),
             projects: res.__('projects'),
             contact: res.__('contact'),
-            shortDescription: res.__('short_description') });
+            shortDescription: res.__('short_description'),
+            sourceCode: res.__('sourcecode'),
+            viewResume: res.__('view_resume'),
+            skillsItem1: res.__('skills_item_1'),
+            skillsItem1Desc: res.__('skills_item_1_desc'),
+            skillsItem2: res.__('skills_item_2'),
+            skillsItem2Desc: res.__('skills_item_2_desc'),
+            skillsItem3: res.__('skills_item_3'),
+            skillsItem3Desc: res.__('skills_item_3_desc'),
+            skillsItem4: res.__('skills_item_4'),
+            skillsItem4Desc: res.__('skills_item_4_desc'),
+            skillsItem5: res.__('skills_item_5'),
+            skillsItem5Desc: res.__('skills_item_5_desc'),
+            skillsItem6: res.__('skills_item_6'),
+            skillsItem6Desc: res.__('skills_item_6_desc'),
+            skillsItem7: res.__('skills_item_7'),
+            skillsItem7Desc: res.__('skills_item_7_desc'),
+            skillsItem8: res.__('skills_item_8'),
+            skillsItem8Desc: res.__('skills_item_8_desc'),
+            skillsItem9: res.__('skills_item_9'),
+            skillsItem9Desc: res.__('skills_item_9_desc'),
+            skillsItem10: res.__('skills_item_10'),
+            skillsItem10Desc: res.__('skills_item_10_desc'),
+            skillsItem11: res.__('skills_item_11'),
+            skillsItem11Desc: res.__('skills_item_11_desc'),
+            skillsItem12: res.__('skills_item_12'),
+            skillsItem12Desc: res.__('skills_item_12_desc'),
+            skillsItem13: res.__('skills_item_13'),
+            skillsItem13Desc: res.__('skills_item_13_desc'),
+            contactDescription: res.__('contact_description'),
+            copyright: res.__('copyright')
+        });
     }
 
 });
 
 app.get('*', function (req, res) {
-    res.render('notfound');
+    res.render('pages/notfound');
 });
 
 app.listen(port, () => {

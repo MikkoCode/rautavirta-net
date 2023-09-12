@@ -1,0 +1,324 @@
+/* Basic HTML styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Navbar Styles */
+.header, .navbar {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navbar Styles */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Content and Buttons Styles */
+.main-content {
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Forms, Footer, and Responsive Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    background-color: #2b3036;
+    color: #fff;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .navbar li {
+        margin: 0 10px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Heading, Paragraph, Links, and Lists Styles */
+h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+/* Images and Tables Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #2b3036;
+}
+
+/* Alerts and Card Styles */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+}
+
+.card {
+    background-color: #2b3036;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Additional Heading, Blockquotes, and Button Styles */
+h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+/* Additional Styles */
+
+/* Custom Header Styles */
+.header h2 {
+    font-size: 2rem;
+    color: #ff6600;
+}
+
+/* Custom Button Styles */
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+}
+
+/* Custom Link Styles */
+.link-primary {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.link-primary:hover {
+    text-decoration: none;
+}
+
+/* Custom List Styles */
+.icon-list {
+    list-style-type: none;
+}
+
+.icon-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.icon-list li:before {
+    content: "\2022"; /* Bullet character */
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+/* Custom Quote Styles */
+.callout {
+    background-color: #f8f9fa;
+    border-left: 4px solid #ffc107;
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+
+/* Custom Table Styles */
+.table-striped {
+    background-color: #f8f9fa;
+}
+
+/* Custom Form Input Styles */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Custom Footer Styles */
+.footer p {
+    font-size: 0.9rem;
+}
+
+/* Custom Alert Styles */
+.alert-info {
+    background-color: #17a2b8;
+    color: #fff;
+    border-color: #17a2b8;
+}
+
+.alert-info:hover {
+    background-color: #117a8b;
+}
+
+/* Custom Card Styles */
+.card-primary {
+    background-color: #007bff;
+    border: 1px solid #0056b3;
+}
+
+.card-primary .card-title {
+    color: #fff;
+}
+
+/* Custom Background Image */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}

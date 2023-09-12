@@ -1,0 +1,151 @@
+/* Navigation Bar Styles */
+
+/* Main Navbar */
+nav#mainNav.navbar.navbar-expand-lg.fixed-top.bg-secondary.text-uppercase {
+    padding: 0;
+    height: 70px; /* Adjust the height as needed */
+}
+
+/* Container Styles */
+nav#mainNav.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar Brand Styles */
+nav#mainNav.navbar .container a.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Toggle Button Styles */
+nav#mainNav.navbar .container button.navbar-toggler {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Navbar Links Styles */
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item {
+    margin-right: 20px;
+}
+
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item a.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    font-weight: bold;
+}
+
+/* Language Button Styles */
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item a.nav-link.language-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Hover Styles for Links and Language Buttons */
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item a.nav-link:hover,
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item a.nav-link.language-btn:hover {
+    background-color: #007bff;
+    transition: background-color 0.3s ease-in-out;
+}
+/* Active Link Styles */
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item.active a.nav-link {
+    background-color: #007bff; /* Change the color for active links */
+}
+
+/* Icon Styles */
+nav#mainNav.navbar .container button.navbar-toggler i.fa.fa-bars {
+    font-size: 24px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 991.98px) {
+    /* Reduce padding and font size for smaller screens */
+    #navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item a.nav-link,
+    #navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item a.nav-link.language-btn {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    /* Adjust the height of the navbar for smaller screens */
+    nav#mainNav.navbar.navbar-expand-lg.fixed-top.bg-secondary.text-uppercase {
+        height: auto;
+    }
+
+    /* Center the toggle button icon */
+    nav#mainNav.navbar .container button.navbar-toggler i.fa.fa-bars {
+        text-align: center;
+    }
+
+    /* Display the language buttons inline */
+    #navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item a.nav-link.language-btn {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+/* Additional Styles for Navbar Dropdown */
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Styles for Dropdown Links */
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item.dropdown .dropdown-menu a.dropdown-item {
+    color: #000; /* Dropdown item text color */
+    background-color: #fff; /* Dropdown item background color */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+#navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item.dropdown .dropdown-menu a.dropdown-item:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Media Query for Adjusting Dropdown Styles on Smaller Screens */
+@media (max-width: 991.98px) {
+    /* Override dropdown menu display */
+    #navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item.dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    /* Center the dropdown toggle icon */
+    #navbarResponsive.collapse.navbar-collapse ul.navbar-nav.ms-auto li.nav-item.dropdown button.nav-link i.fa.fa-angle-down {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+/* Make the Navbar Sticky */
+nav#mainNav {
+    position: sticky;
+    top: 0;
+    background-color: #343a40; /* Navbar background color when sticky */
+    z-index: 1000; /* Ensure the navbar is above other elements */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Adjust Navbar Logo on Sticky */
+nav#mainNav .navbar-brand {
+    padding: 15px 0;
+}
+
+/* Change Navbar Text Color on Sticky */
+nav#mainNav.navbar-scrolled {
+    background-color: #1c1c1c; /* Navbar background color when scrolled */
+}
