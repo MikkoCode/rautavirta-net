@@ -11,6 +11,11 @@ block content
                 h1.mb-0 Mikko Rautavirta
                 .mb-5
                     h2.font-weight-light.mb-0 IT-Student & Junior Developer
+                    h3.font-weight-light.mb0= welcomeMessage
+        if languageMessage
+            .alert.alert-info.alert-dismissible.fade.show.d-flex.align-items-center.flex-column
+                p= languageMessage
+                button.btn.btn-primary(type='button', onclick="refreshPage()") OK
 
         // About Section
         section#about

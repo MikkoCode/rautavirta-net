@@ -227,3 +227,11 @@
     max-width: 12em;
     padding: inherit;
 }
+
+.language-btn{
+    color: dimgray;
+    font-size: small;
+    letter-spacing: -1px;
+    padding: 0px;
+    margin: -1em;
+}
