@@ -1,6 +1,9 @@
 {
 	"welcome_message": "Welcome",
-	"about": "About",
+	"about": "About Me",
+	"skills": "Skills",
+	"projects": "Projects",
 	"contact": "Contact",
+	"short_description": "IT-Student & Junior Developer",
 	"language_message": "We set your default language as english. You can change it from the navigation bar."
 }

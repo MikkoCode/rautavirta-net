@@ -1,6 +1,9 @@
 {
   "welcome_message": "Tervetuloa",
-  "about": "Tietoja",
-  "contact": "Ota yhteyttä",
-  "language_message": "Asetimme oletuskielenä suomen. Voit vaihtaa kielen navigointipalkista."
+  "about": "Tietoja minusta",
+  "skills": "Taidot",
+  "projects": "Projektit",
+  "contact": "Yhteystiedot",
+  "short_description": "IT-Opiskelija & Junior-Kehittäjä",
+  "language_message": "Asetimme oletuskielenäsi englannin. Voit vaihtaa sen navigointipalkista."
 }

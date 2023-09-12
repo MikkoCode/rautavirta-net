@@ -51,7 +51,10 @@ app.get('/', (req, res) => {
         res.render('index', {
             welcomeMessage: res.__('welcome_message'),
             about: res.__('about'),
+            skills: res.__('skills'),
+            projects: res.__('projects'),
             contact: res.__('contact'),
+            shortDescription: res.__('short_description'),
             languageMessage: res.__('language_message')
         });
     } else {
@@ -60,7 +63,10 @@ app.get('/', (req, res) => {
         res.render('index', {
             welcomeMessage: res.__('welcome_message'),
             about: res.__('about'),
-            contact: res.__('contact') });
+            skills: res.__('skills'),
+            projects: res.__('projects'),
+            contact: res.__('contact'),
+            shortDescription: res.__('short_description') });
     }
 
 });

@@ -14,24 +14,15 @@ nav#mainNav.navbar.navbar-expand-lg.fixed-top.bg-secondary.text-uppercase
         #navbarResponsive.collapse.navbar-collapse
             ul.navbar-nav.ms-auto
                 li.nav-item.mx-0.mx-lg-1
-                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about')
-                        i.fa.fa-info-circle.fa-outline
-                        | About
+                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about')= about
+                li.nav-item.mx-0.mx-lg-1
+                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#skills')= skills
 
                 li.nav-item.mx-0.mx-lg-1
-                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#skills')
-                        i.fa.fa-code
-                        | Skills
+                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#projects')= projects
 
                 li.nav-item.mx-0.mx-lg-1
-                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#projects')
-                        i.fa.fa-rocket
-                        | Projects
-
-                li.nav-item.mx-0.mx-lg-1
-                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact')
-                        i.fa.fa-envelope
-                        | Contact
+                    a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact')= contact
 
                 // Add buttons for changing language
                 li.nav-item.mx-0
