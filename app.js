@@ -53,7 +53,9 @@ app.get('/', (req, res) => {
     * res.render('pages/index', templateData);**/
     res.render('pages/notfound');
 });
-
+app.get('/cv-fi', function (req, res) {
+    res.render('cv');
+});
 // Not found route
 app.get('*', function (req, res) {
     res.render('pages/notfound');
