@@ -1,20 +1,6 @@
 
-B
-views/projects.pug,3\f\3f1da2c9454a048a18ccd8a2b8e38226574149af
-?
-views/about.pug,8\c\8cd19de0866e6a42e816cf00c395531cae9ac621
-?
-views/index.pug,e\4\e465e003ac3202407b8d16efb96736719f4cb6ad
 ?
 locales/en.json,5\9\592e30f73054efb007a5378bf9312e066bdda8b7
-@
-views/header.pug,0\4\04aae60d029080933850f6ce47f09bd3e9b9f588
-@
-views/footer.pug,9\8\98c8f3ff303223ea5613210ec4637ae64cc62bdf
-A
-views/contact.pug,e\9\e936223bece95f131611ce9ee4cc9c420d568762
-@
-views/layout.pug,c\c\cc77650818475f7218816df2b7f96e68e62c4fde
 E
 public/css/styles.css,c\c\ccef9d2f34fd679a4eef74f96b59af18a3b918cc
 C
