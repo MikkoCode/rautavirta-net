@@ -37,3 +37,7 @@ E
 public/css/layout.css,5\8\58554cc98cb11599865417408e9cc2f0aa351ee9
 E
 public/css/footer.css,8\e\8e127eb228ee794c05e25f3e76ea81711c2db344
+A
+public/css/cv.css,1\6\168e4946cfca628f259e9b409b56bc152a0758b2
+<
+views/cv.pug,1\0\106e7e73dafa84cb0de0b3ca0aa518f281bd3ad7
