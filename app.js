@@ -33,24 +33,24 @@ app.get('/switch-language/:lang', (req, res) => {
 
 // Render the Pug template
 app.get('/', (req, res) => {
-    /**
-     * const reqLocale = req.cookies.language || i18n.getLocale();
-     * res.cookie('language', reqLocale);
-     * i18n.setLocale(reqLocale);
-     * console.log(`Rendering Pug template. Current locale: ${reqLocale}`);
 
-     * const templateData = {
-     *   welcomeMessage: res.__('welcome_message'),
-     *   about: res.__('about'),
-     *   skills: res.__('skills'),
-     *   projects: res.__('projects'),
-     *   contact: res.__('contact'),
-     *   shortDescription: res.__('short_description'),
-     *   sourceCode: res.__('sourcecode'),
-     *   viewResume: res.__('view_resume'),
-     //  };
+      const reqLocale = req.cookies.language || i18n.getLocale();
+      res.cookie('language', reqLocale);
+      i18n.setLocale(reqLocale);
+      console.log('Rendering Pug template. Current locale: ${reqLocale}');
 
-    * res.render('pages/index', templateData);**/
+      const templateData = {
+        welcomeMessage: res.__('welcome_message'),
+        about: res.__('about'),
+        skills: res.__('skills'),
+        projects: res.__('projects'),
+        contact: res.__('contact'),
+        shortDescription: res.__('short_description'),
+        sourceCode: res.__('sourcecode'),
+       viewResume: res.__('view_resume'),
+      };
+
+      res.render('pages/index', templateData);
     res.render('pages/notfound');
 });
 app.get('/cv-fi', function (req, res) {
