@@ -51,7 +51,9 @@ app.get('/', (req, res) => {
       };
 
       res.render('pages/index', templateData);
-    res.render('pages/notfound');
+});
+app.get('/about', (req, res) => {
+    res.render('pages/about', templateData);
 });
 app.get('/cv-fi', function (req, res) {
     res.render('cv');
